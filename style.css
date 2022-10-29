@@ -1,660 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-:root {
-  --poppins: 'Poppins', sans-serif;
-  --opensans: 'Open Sans', sans-serif;
-  --pink: hsl(322, 100%, 66%);
-  --very-pale-cyan: hsl(193, 100%, 96%);
-  --very-pale-blue: hsl(207, 100%, 98%);
-  --very-dark-cyan: hsl(192, 100%, 9%);
-  --grayish-blue: hsl(208, 11%, 55%);
-  --light-pink: hsl(321, 100%, 78%);
-  --light-red: hsl(0, 100%, 63%);
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  min-height: 100vh;
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: center;
-}
-.container {
-  max-width: 37.5rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.header {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 2rem;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.row img {
-  align-self: center;
-  display: block;
-  width: 30%;
-}
-.row button {
-padding: 0.3rem 1.5rem;
-font-size: 1rem;
-border-radius: 2rem;
-overflow: hidden;
-color: var(--pink);
-font-weight: 700;
-font-family: var(--opensans);
-background-color: white;
-border: 1px solid var(--pink);
-box-shadow: 0 0 6px pink;
-}
-.header-info {
-  display: flex;
-  flex-direction: column;
-  padding: 21% 10% 20% 10%;
-}
-h1 {
-  font-size: 2.3rem;
-  font-family: var(--poppins);
-  text-align: center;
-  color: var(--very-dark-cyan);
-  font-weight: 600;
-}
-h4 {
-  font-size: 1.3rem;
-  font-family: var(--opensans);
-  text-align: center;
-  color: var(--very-dark-cyan);
-  font-weight: 400;
-  padding-top: 7%;
-  padding-bottom: 11%;
-  line-height: 2.3rem;
-}
-.header-info button {
-  width: 20rem;
-  font-size: 1.2rem;
-  align-self: center;
-  padding: 0.9rem 0 1.1rem 0;
-  border-radius: 2rem;
-  overflow: hidden;
-  color: var(--very-pale-cyan);
-  background-color: var(--pink);
-  font-family: var(--opensans);
-  font-weight: 700;
-  border: none;
-  transition: 0.3s;
-}
-.header-img {
-  max-width: 37.5rem;
-  width: 100%;
-  padding: 0 10% 25% 10%;
-}
-.header-img img {
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-.header-stats-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.header-stats {
-  display: flex;
-  flex-direction: column;
-}
-.communities, .messages {
-  display: flex;
-  flex-direction: column;
-}
-.communities {
-  margin-bottom: 50%;
-}
-.img-stats {
-  width: 20%;
-  display: block;
-}
-.communities h2 {
-  font-family: var(--opensans);
-  color: var(--very-dark-cyan);
-  font-size: 6rem;
-}
-.messages h2 {
-  font-size: 5.3rem;
-  font-family: var(--opensans);
-  color: var(--very-dark-cyan);
-}
-.communities h6, .messages h6 {
-  font-family: var(--opensans);
-  color: var(--grayish-blue);
-  font-size: 1.3rem;
-  font-weight: 400;
-  align-self: center;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Huddle Landing Page Curved</title>
+</head>
+<body>
+<div class="container"> 
 
-.main1, .main2, .main3 {
-  max-width: 37.5rem;
-  width: 100%;
-  padding: 0 6% 0 6%;
-}
-.main1, .main3 {
-  background-color: var(--very-pale-blue);
-}
-.main2 {
-  margin-top: 15%;
-  margin-bottom: 20%;
-}
-.images img {
-  width: 90%;
-  display: block;
-  margin: auto;
-  padding: 16% 0 14% 0;
-}
-.info {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 15%;
-}
-.info h2 {
-  text-align: center;
-  font-size: 2rem;
-  font-family: var(--poppins);
-  color: var(--very-dark-cyan);
-  font-weight: 600;
-}
-.info p {
-  font-size: 1.3rem;
-  text-align: center;
-  color: var(--very-dark-cyan);
-  font-family: var(--opensans);
-  margin-top: 6%;
-  line-height: 2rem;
-}
-.banner {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 11%;
-  background-color: white;
-  margin-top: 7%;
-  margin-bottom: 25%;
-}
-.banner h3 {
-  font-size: 2rem;
-  text-align: center;
-  color: var(--very-dark-cyan);
-  font-family: var(--poppins);
-  font-weight: 600;
-  padding: 11% 5% 7% 5%;
-}
-.banner button {
-  width: 20rem;
-  align-self: center;
-  padding: 1.1rem 0;
-  background-color: var(--pink);
-  color: var(--very-pale-cyan);
-  font-family: var(--opensans);
-  font-weight: 700;
-  font-size: 1.1rem;
-  border-radius: 1.8rem;
-  overflow: hidden;
-  border: none;
-  transition: 0.3s;
-}
-.curved  {
-max-width: 37.5rem;
-width: 100%;
-}
-.mobile {
-  display: block;
-  margin: auto;
-  width: 100%; 
-}
-.desktop {
-  display: none;
-}
-.footer {
-  padding: 10% 4% 10% 4%;
-  background-color: var(--very-dark-cyan);
-}
-.letter-main {
-  display: flex;
-  flex-direction: column;
-  color: var(--very-pale-cyan);
-  font-family: var(--opensans);
-}
-.letter {
-  display: flex;
-  flex-direction: column;
-}
-.letter h5 {
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-.letter p {
-  font-size: 1.3rem;
-  line-height: 2.2rem;
-  margin-top: 7%;
-  margin-bottom: 7%;
-}
-.letter-input {
-  display: flex;
-  flex-direction: column;
-}
-input {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  font-family: var(--opensans);
-  font-weight: 400;
-  border: none;
-  outline: none;
-  margin-bottom: 5%;
-}
-input:focus {
-  cursor: auto;
-}
-.letter-input button {
-  width: 50%;
-  align-self: flex-end;
-  padding: 0.9rem 0 1.1rem 0;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  font-family: var(--opensans);
-  font-weight: 700;
-  color: white;
-  background-color: var(--pink);
-  border: none;
-  transition: 0.3s;
-}
-.flogo {
-  max-width: 37.5rem;
-  width: 100%;
-  padding-bottom: 8%;
-  margin-top: 18%;
-}
-.flogo img {
-  display: block;
-  width: 50%;
-  margin-right: auto;
-}
-.fmain {
-  display: flex;
-  flex-direction: column;
-}
-.finfo {
-  display: flex;
-  flex-direction: column;
-}
-#location {
-  display: flex;
-  flex-direction: row;
-}
-#location p {
-  color: var(--very-pale-cyan);
-  padding: 0;
-  font-family: var(--opensans);
-  font-size: 1.3rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-}
-#phone img, #mail img {
-  align-self: center;
-}
-#phone p, #mail p {
-  padding: 3% 3% 2% 4%;
-  color: var(--very-pale-cyan);
-  font-family: var(--opensans);
-  font-size: 1.3rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-}
-#phone {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5%;
-}
-#mail {
-  display: flex;
-  flex-direction: row;
-  margin-top: 3%;
-}
-.social {
-  display: flex;
-  flex-direction: row;
-  padding-top: 12%;
-  align-items: center;
-  padding-bottom: 5%;
-}
-.social img {
-  display: flex;
-  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(310deg) brightness(112%) contrast(101%);
-}
-.social a:nth-child(2) {
-  margin-left: 3%;
-  margin-right: 3%;
-}
+  <div class="header">
+    <div class="row">
+      <img src="img/logo.svg" alt="ld">
+      <button>Try It Free</button>
+    </div>
+    <div class="header-main">
+    <div class="header-info">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <h4>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+          Create connections with your users as you engage in genuine discussion.
+      </h4>
+      <button>Get Started For Free</button>
+    </div>
+    <div class="header-img">
+      <img src="img/screen-mockups.svg" alt="iml">
+    </div>
+    <div class="header-stats-main">
+    <div class="header-stats">
+      <div class="communities">
+        <img class="img-stats" src="img/icon-communities.svg" alt="cm">
+        <h2>1.4k+</h2>
+        <h6>Communities Formed</h6>
+      </div>
+      <div class="messages">
+        <img class="img-stats" src="img/icon-messages.svg" alt="mg">
+        <h2>2.7m+</h2>
+        <h6>Messages Sent</h6>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="main">
+  <div class="curved">
+    <img class="mobile" src="img/bg-section-top-mobile-1.svg" alt="">
+    <img class="desktop" src="img/bg-section-top-desktop-1.svg" alt="">
+  </div>
+  <div class="main1">
+    <div class="images">
+      <img src="img/illustration-grow-together.svg" alt="iu">
+    </div>
+    <div class="info">
+      <h2>Grow Together</h2>
+      <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+      Think of the insightful conversations you miss out on with a feedback form.</p>
+    </div>
+  </div>
+  <div class="curved">
+    <img class="mobile" src="img/bg-section-bottom-mobile-1.svg" alt="">
+    <img class="desktop" src="img/bg-section-bottom-desktop-1.svg" alt="">
+  </div>
+  <div class="main2">
+    <div class="images">
+      <img src="img/illustration-flowing-conversation.svg" alt="fc">
+    </div>
+    <div class="info right-pad" >
+      <h2>Flowing Conversations</h2>
+      <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+        have just-in-time loading for a more natural flow.</p>
+    </div>
+  </div>
+  <div class="curved">
+    <img class="mobile" src="img/bg-section-top-mobile-2.svg" alt="">
+    <img class="desktop" src="img/bg-section-top-desktop-2.svg" alt="">
+  </div>
+  <div class="main3">
+    <div class="images">
+      <img src="img/illustration-your-users.svg" alt="xc">
+    </div>
+    <div class="info">
+      <h2>Your Users</h2>
+      <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
+        This means, once signed in to your app, your users can start chatting immediately.</p>
+    </div>
+  </div>
+  <div class="curved">
+    <img class="mobile" src="img/bg-section-bottom-mobile-2.svg" alt="">
+    <img class="desktop" src="img/bg-section-bottom-desktop-2.svg" alt="">
+  </div>
+    <div class="banner">
+      <h3>Ready To Build Your Community?</h3>
+      <button>Get Started For Free</button>
+    </div>
 
-@media (min-width: 769px) {
-  .container {
-    max-width: none;
-  }
-  .row {
-    padding-top: 6rem;
-  }
-  .row img {
-    width: 20%;
-  }
-  .row button {
-  padding: 0 3.5rem;
-  font-size: 1.5rem;
-  border-radius: 2.5rem;
-  cursor: pointer;
-  }
-  .row button:hover {
-  color: var(--light-pink);
-  border: 1px solid var(--light-pink);
-  box-shadow: 0 0 6px var(--light-pink);
-  }
-  .header-info {
-    display: flex;
-    flex-direction: column;
-    padding: 15% 10% 8% 10%;
-  }
-  h1 {
-    font-size: 4.8rem;
-    line-height: 5.7rem;
-  }
-  h4 {
-    font-size: 2rem;
-    padding: 3% 25% 5% 25%;
-  }
-  .header-info button {
-    width: 40rem;
-    font-size: 1.8rem;
-    padding: 2.4rem 0 2.5rem 0;
-    border-radius: 3.5rem;
-  }
-  .header-info button:hover {
-    background-color: var(--light-pink);
-    cursor: pointer;
-  }
-  .header-img {
-    max-width: none;
-    width: 100%;
-    padding: 0 10% 10% 10%;
-  }
-  .header-img img {
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-  .header-stats-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    padding: 0 18% 12% 18%;
-  }
-  .header-stats {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-  }
-  .communities {
-    margin-bottom: 0;
-  }
-  .communities, .messages {
-    display: flex;
-    flex-direction: column;
-  }
-  .img-stats {
-    width: 20%;
-    display: block;
-  }
-  .communities h2 {
-    font-size: 10rem;
-  }
-  .messages h2 {
-    font-size: 10rem;
-  }
-  .messages .img-stats {
-    display: block;
-    width: 18%;
-  }
-  .communities h6, .messages h6 {
-    font-size: 2.2rem;
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-  }
-  .main1, .main2, .main3 {
-    max-width: none;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 4% 6% 4% 6%;
-  }
-  .main1, .main3 {
-    background-color: var(--very-pale-blue);
-    flex-direction: row-reverse;
-  }
-  .main2 {
-    margin-top: 8%;
-    margin-bottom: 10%;
-  }
-  .images img {
-    width: 100%;
-    display: block;
-    margin: auto;
-    padding: 0;
-  }
-  .images {
-    flex: 45%;
-    align-self: center;
-  }
-  .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 55%;
-    padding-right: 6%;
-  }
-  .right-pad {
-    padding-right: 0;
-    padding-left: 6%;
-  }
-  .info h2 {
-    text-align: left;
-    font-size: 4.3rem;
-    line-height: 4.7rem;
-  }
-  .info p {
-    font-size: 1.7rem;
-    text-align: left;
-    margin-top: 6%;
-    line-height: 2.5rem;
-  }
-  .banner {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 7%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  .banner h3 {
-    font-size: 4.5rem;
-    padding: 4% 6% 3% 6%;
-  }
-  .banner button {
-    width: 40rem;
-    align-self: center;
-    padding: 2.3rem 0 2.4rem 0;
-    font-size: 2rem;
-    border-radius: 4rem;
-  }
-  .banner button:hover {
-    background-color: var(--light-pink);
-    cursor: pointer;
-  }
-  .curved  {
-  max-width: none;
-  width: 100%;
-  }
-  .mobile {
-    display: none;
-  }
-  .desktop {
-    display: block;
-    margin: auto;
-    width: 100%;
-  }
-  .footer {
-    padding: 6% 6% 6% 6%;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .fmain {
-    flex: 55%;
-    padding-right: 20%;
-  }
-  .letter-main {
-    display: flex;
-    flex-direction: column;
-    flex: 45%;
-  }
-  .letter {
-    display: flex;
-    flex-direction: column;
-    padding-right: 30%;
-  }
-  .letter h5 {
-    font-size: 2.5rem;
-  }
-  .letter p {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    margin-top: 5%;
-  }
-  .letter-input {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  input {
-    width: 35rem;
-    padding: 1.4rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-    cursor: pointer;
-  }
-  .letter-input button {
-    width: 15rem;
-    align-self: flex-start;
-    padding: 1.4rem 0 1.5rem 0;
-    border-radius: 0.5rem;
-  }
-  .letter-input button:hover {
-    background-color: var(--light-pink);
-    cursor: pointer;
-  }
-  .flogo {
-    max-width: none;
-    width: 100%;
-    padding-bottom: 8%;
-    margin-top: 0;
-  }
-  .flogo img {
-    display: block;
-    width: 60%;
-    margin-right: auto;
-  }
-  .fmain {
-    display: flex;
-    flex-direction: column;
-  }
-  .finfo {
-    display: flex;
-    flex-direction: column;
-  }
-  #location {
-    display: flex;
-    flex-direction: row;
-  }
-  #location p {
-    padding: 0 25% 0 0;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
-  }
-  #phone img, #mail img {
-    align-self: center;
-  }
-  #phone p, #mail p {
-    padding: 3% 3% 2% 4%;
-    color: var(--very-pale-cyan);
-    font-family: var(--opensans);
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-weight: 400;
-  }
-  #phone {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-  }
-  #mail {
-    display: flex;
-    flex-direction: row;
-    margin-top: 3%;
-  }
-  .social {
-    display: flex;
-    flex-direction: row;
-    padding-top: 12%;
-    align-items: center;
-    padding-bottom: 0;
-  }
-  .social img {
-    display: flex;
-    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(310deg) brightness(112%) contrast(101%);
-  }
-  .social img:hover {
-    cursor: pointer;
-    filter: invert(47%) sepia(16%) saturate(5513%) hue-rotate(162deg) brightness(95%) contrast(101%);
-  }
-  .social a:nth-child(2) {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media (min-width: 769px) and (max-width: 880px) {
-  input {
-    width: 25rem;
-  }
-}
-@media (min-width: 769px) and (max-width: 1050px) {
-  .messages h2, .communities h2 {
-    font-size: 9rem;
-  }
-  .header-stats-main {
-    padding: 0 13% 12% 13%;
-  }
-}
+  <div class="curved">
+    <img class="mobile" src="img/bg-footer-top-mobile.svg" alt="">
+    <img class="desktop" src="img/bg-footer-top-desktop.svg" alt="">
+  </div>
+</div>
+  <div class="footer">
+    
+    <div class="letter-main">
+      <div class="letter">
+        <h5>Newsletter</h5>
+        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+        send you spam or pass on your email address</p>
+      </div>
+      <div class="letter-input">
+        <div class="mail">
+          <input id="email-field" type="email" placeholder="example@company.com" spellcheck="false" onkeyup="validationEmail()">
+          <span id="email-error"></span>
+        </div>
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+    <div class="fmain">
+      <div class="flogo">
+        <img src="img/logo-f.svg" alt="fl">
+      </div>
+      <div class="finfo">
+        <div id="location">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua</p>
+        </div>
+        <div id="phone">
+          <img src="img/icon-phone.svg" alt="p">
+          <p>Phone: +1-543-123-4567</p>
+        </div>
+        <div id="mail">
+          <img src="img/icon-email.svg" alt="m">
+          <p>example@huddle.com</p>
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="img/icon-facebook.svg"/>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="img/icon-twitter.svg"/>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="img/icon-instagram.svg"/>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div> 
+
+<script src="script.js"></script>
+</body>
+</html>
