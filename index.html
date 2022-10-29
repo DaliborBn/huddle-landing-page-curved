@@ -108,7 +108,10 @@
         send you spam or pass on your email address</p>
       </div>
       <div class="letter-input">
-        <input type="email" placeholder="example@company.com">
+        <div class="mail">
+          <input id="email-field" type="email" placeholder="example@company.com" spellcheck="false" onkeyup="validationEmail()">
+          <span id="email-error"></span>
+        </div>
         <button>Subscribe</button>
       </div>
     </div>
@@ -146,5 +149,7 @@
   </div>
 
 </div> 
+
+<script src="script.js"></script>
 </body>
 </html>
