@@ -263,7 +263,7 @@ input {
   font-weight: 400;
   border: none;
   outline: none;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0;
 }
 input:focus {
   outline: none;
