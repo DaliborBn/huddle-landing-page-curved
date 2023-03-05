@@ -1,4 +1,3 @@
-### huddle-landing-page-curved
-
+### HUDDLE LANDING PAGE CURVED
 #### Visit live URL: https://daliborbn.github.io/huddle-landing-page-curved/
-![desktop-preview](https://user-images.githubusercontent.com/109923493/197357520-3545f129-c516-4c4a-9a0b-66c2e9740b08.jpg)
+<a href="https://daliborbn.github.io/huddle-landing-page-curved/"><img src="https://user-images.githubusercontent.com/109923493/211657883-56c3558c-4b69-40d1-bb4f-7cca19e0f217.jpg"></a>
