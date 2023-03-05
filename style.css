@@ -1,0 +1,250 @@
+img.desktop {
+  display: none;
+}
+.container {
+  width: 100%;
+}
+.header {
+  background-color: white;
+  width: 100%;
+}
+.header-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.header-row a {
+  display: flex;
+  width: 30%;
+  max-width: 20rem;
+  min-width: 10rem;
+}
+.header-row a img {
+  display: block;
+  align-self: center;
+}
+.header-row button {
+  padding: 1.2% 5%;
+  align-self: center;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: white;
+  color: var(--pink);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--opensans);
+  border: 1px solid var(--pink);
+  box-shadow: 0 0 6px var(--light-pink);
+  transition: all ease 0.3s;
+}
+.header-info {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+h1 {
+  font-size: 2.3rem;
+  font-family: var(--poppins);
+  text-align: center;
+  color: var(--very-dark-cyan);
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.4rem;
+  font-family: var(--opensans);
+  text-align: center;
+  line-height: 1.5;
+  color: var(--very-dark-cyan);
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 3.2rem;
+}
+.stats {
+  background-color: white;
+  width: 100%;
+}
+.screen-image img {
+  margin: auto;
+}
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rem;
+}
+.stats-info-box {
+  display: flex;
+  flex-direction: column;
+}
+.stats-info-box img {
+ width: 20%;
+}
+.stats-info-box h2 {
+  font-size: 5.3rem;
+  font-family: var(--opensans);
+  color: var(--very-dark-cyan);
+}
+.stats-info-box h6 {
+  font-family: var(--opensans);
+  color: var(--grayish-blue);
+  font-size: 1.3rem;
+  font-weight: 400;
+  align-self: center;
+}
+.stats-info-box:nth-child(2) {
+  margin-top: 6rem;
+}
+.section-main {
+  width: 100%;
+}
+/* Because of design i need these classes! */
+.sec1-img {
+  margin-top: 8rem;
+  margin-bottom: 7rem;
+}
+.sec2-img {
+  margin-top: 12rem;
+  margin-bottom: 9rem;
+}
+.sec3-img {
+  margin-top: 0;
+  margin-bottom: 9rem;
+}
+.section-i1 {
+  margin-bottom: 5rem;
+}
+.section-i2 {
+  margin-bottom: 12rem;
+}
+.section-i3 {
+  margin-bottom: 10rem;
+}
+.banner-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.banner {
+  margin-top: 7rem;
+  margin-bottom: 20rem;
+  width: 100%;
+}
+.banner h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--very-dark-cyan);
+  font-family: var(--poppins);
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+.bg-dark-cyan {
+  background-color: var(--very-dark-cyan);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer-letter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  color: var(--very-pale-cyan);
+  font-family: var(--opensans);
+}
+.footer-letter h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.footer-letter p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+}
+.input-mail {
+  display: flex;
+  flex-direction: column;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+input {
+  width: 100%;
+  height: 4.5rem;
+  padding: 1.4rem 1.2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-size: 1.4rem;
+  font-family: var(--opensans);
+  border: none;
+  outline: none;
+}
+.input-wrapper span {
+  font-family: var(--opensans);
+  color: var(--red);
+  font-size: 1.4rem;
+  z-index: 2;
+}
+.input-mail button {
+  width: 50%;
+  height: 4.5rem;
+  max-width: 20rem;
+  align-self: flex-end;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: var(--opensans);
+  font-weight: 700;
+  color: white;
+  background-color: var(--pink);
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+  margin-top: 1.5rem;
+}
+.footer-info-main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+.footer-logo a img {
+  width: 20rem;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.footer-info > p {
+  color: var(--very-pale-cyan);
+  font-family: var(--opensans);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+}
+.contact {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.contact-item:nth-child(1) {
+  margin-bottom: 1.5rem;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.social a img {
+  width: 2rem;
+  transition: all ease-in-out 0.3s;
+}
+.social a:nth-child(2) {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+
