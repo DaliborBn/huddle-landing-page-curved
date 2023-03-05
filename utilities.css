@@ -54,7 +54,7 @@ img {
   background-color: var(--very-pale-blue);
 }
 .section div a img {
-  width: 80%;
+  width: 90%;
   margin: auto;
   transition: transform ease 0.5s, opacity ease 2s;
   visibility: hidden;
