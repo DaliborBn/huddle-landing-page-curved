@@ -5,8 +5,14 @@
   .second-padding {
     padding: 0 8rem;
   }
+  .header-row {
+    margin-top: 5rem;
+  }
   .header-row button {
     font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 2.8rem;
   }
   .stats-info {
     width: 100%;
@@ -16,6 +22,13 @@
   }
   .stats-info-box:nth-child(2) {
     margin-top: 0;
+  }
+  .section div a img {
+    width: 80%;
+  }
+  .banner h3 {
+    max-width: 29rem;
+    font-size: 2.8rem;
   }
   input {
     max-width: 35rem;
@@ -37,7 +50,7 @@
     padding: 0.8rem 3.5rem;
   }
   h1 {
-    font-size: 2.8rem;
+    max-width: none;
   }
   h4 {
     width: 46rem;
@@ -62,6 +75,9 @@
   }
   .stats-info-box h6 {
     font-size: 1.8rem;
+  }
+  .section {
+    align-items: start;
   }
   #section-1, #section-3 {
     flex-direction: row-reverse;
@@ -103,7 +119,7 @@
     margin: 10rem 0;
   }
   .banner h3 {
-    font-size: 2.8rem;
+    max-width: none;
   }
   .footer {
     flex-direction: row-reverse;
@@ -142,15 +158,43 @@
     cursor: pointer;
     background-color: var(--light-pink);
   }
-  .social a img:hover {
-    cursor: pointer;
-    filter: invert(44%) sepia(88%) saturate(685%) hue-rotate(153deg) brightness(95%) contrast(104%);
+  .social a svg:hover {
+    color: rgb(1, 231, 231);
   }
 }
 
 @media (min-width: 992px) {
+  .header-row button {
+    padding: 0.8rem 3rem;
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+    width: 52rem;
+  }
+  .screen-image img {
+    width: 85%;
+  }
   .stats-info {
     width: 85rem;
+  }
+  .stats-info-box h2 {
+    font-size: 8rem;
+  }
+  .stats-info-box h6 {
+    font-size: 1.8rem;
+  }
+  .section-info h2 {
+    font-size: 3.2rem;
+  }
+  .section-info p {
+    font-size: 1.6rem;
+  }
+  .banner h3 {
+    font-size: 3.2rem;
   }
 }
 
