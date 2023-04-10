@@ -44,6 +44,7 @@ img {
 .section {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .wrapper {
   display: flex;
@@ -72,6 +73,7 @@ img {
   font-weight: 600;
 }
 .section-info p {
+  max-width: 49rem;
   font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
