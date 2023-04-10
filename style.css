@@ -40,10 +40,12 @@ img.desktop {
   transition: all ease 0.3s;
 }
 .header-info {
+  width: 100%;
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
 h1 {
+  max-width: 36rem;
   font-size: 2.3rem;
   font-family: var(--poppins);
   text-align: center;
@@ -51,6 +53,7 @@ h1 {
   font-weight: 700;
 }
 h4 {
+  max-width: 48rem;
   font-size: 1.4rem;
   font-family: var(--opensans);
   text-align: center;
@@ -97,7 +100,7 @@ h4 {
 .section-main {
   width: 100%;
 }
-/* Because of design i need these classes! */
+/* Because of design, I need these classes! */
 .sec1-img {
   margin-top: 8rem;
   margin-bottom: 7rem;
@@ -130,7 +133,8 @@ h4 {
   width: 100%;
 }
 .banner h3 {
-  font-size: 2.4rem;
+  max-width: 26rem;
+  font-size: 2.3rem;
   text-align: center;
   color: var(--very-dark-cyan);
   font-family: var(--poppins);
@@ -238,13 +242,12 @@ input {
   align-items: center;
   padding-bottom: 5rem;
 }
-.social a img {
-  width: 2rem;
+.social a svg {
+  display: block;
   transition: all ease-in-out 0.3s;
+  color: white;
 }
 .social a:nth-child(2) {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-
-
